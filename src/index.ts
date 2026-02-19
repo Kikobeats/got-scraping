@@ -68,8 +68,8 @@ const gotScraping = originalGot.extend({
     },
     hooks: {
         init,
-        beforeRequest,
-        beforeRedirect,
+        beforeRequest: beforeRequest as any,
+        beforeRedirect: beforeRedirect as any,
     },
 }) as GotScraping;
 
